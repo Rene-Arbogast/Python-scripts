@@ -14,14 +14,13 @@ ports=[20,21,23,25,43,49,53,69,70,79,80,109,110,115,137,139,143,161,194,389,443,
 #take the path to where we want to create files
 #raw_input takes the input in the string format
 
-folder_name = raw_input("Enter the folder name you want to create: ")
-path=raw_input('Enter the path you want to create the folder: ')
+folder_name = "ATest"
+path= = "C:/"
 ask = raw_input('Do you want to enable verbose mode? y/n')
 
 try:
    os.chdir(path)
    os.mkdir(folder_name)
-   os.mkdir("C:\ATest")
    os.chdir('./'+folder_name)
    print 
 except:
